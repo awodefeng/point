@@ -1,0 +1,28 @@
+<resources >
+    <string name="app_name">PointSystem</string>
+    <string name="total_point">获得总积分:%1$1d</string>
+    <string name="covert_point_from_step">运动转化积分:%1$1d</string>
+    <string name="obtain_point_from_bag">开包袋获得积分:%1$1d</string>
+    <string name="rank_title">排行榜</string>
+    <string name="exchange">兑换</string>
+    <string name="others_dial_exchange">打电话</string>
+    <string name="others_story_exchange">听故事</string>
+    <string name="others_duration_exchange">使用时长</string>
+    <string name="others_english_exchange">识单词</string>
+    <string name="others_discribe">每日积分，第二天清空</string>
+    <string name="lucky_bag_exchange_toast">+%1$1d经验值</string>
+    <string name="lucky_bag_exchange_full_toast">已兑换过，请明日再来</string>
+    <string name="step_exchange_toast">+%1$1d经验值</string>
+    <string name="step_exchange_full_toast">今天已全部兑换完成</string>
+    <string name="step_no_exchange_toast">暂无可兑换积分</string>
+    <string name="rank_no_statics">暂无数据</string>
+    <string name="honor1">青铜</string>
+    <string name="honor2">白银</string>
+    <string name="honor3">黄金</string>
+    <string name="honor4">铂金</string>
+    <string name="honor5">钻石</string>
+    <string name="honor6">大师</string>
+    <string name="honor7">王者</string>
+    <string name="no_step_exchange_toast">未产生积分</string>
+    <string name="no_enough_step_exchange_toast">暂无可兑换积分</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleProgressBar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/step_exchange_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/step_exchange_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/step_exchange_star"
+        android:visibility="gone"/>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/footprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/footprint"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/total_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footprint"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/exchange"
+            android:textSize="30dp"/>
+
+    </RelativeLayout>
+
+    <com.xxun.pointsystem.utils.CircleProgressBar
+        android:id="@+id/circleProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        circleProgressBar:direction="top"
+        circleProgressBar:max_progress="100"
+        circleProgressBar:outside_color="@color/colorPrimary"
+        circleProgressBar:outside_radius="85dp"
+        circleProgressBar:progress="0"
+        circleProgressBar:progress_width="18dp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/circleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/exchange_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/no_step_exchage_btn"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/next"/>
+    </RelativeLayout>
+
+</RelativeLayout>

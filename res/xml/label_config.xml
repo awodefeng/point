@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<testitem item_name="运动达人" item_grade="1" item_type="1" item_standard="500"/>
+	<testitem item_name="运动健儿" item_grade="2" item_type="1" item_standard="1500"/>
+	<testitem item_name="运动之王" item_grade="3" item_type="1" item_standard="2500"/>
+	<testitem item_name="幸运星" item_grade="4" item_type="2" item_standard="3"/>
+	<testitem item_name="幸运巨星" item_grade="5" item_type="2" item_standard="4"/>
+	<testitem item_name="运气之王" item_grade="6" item_type="2" item_standard="6"/>
+	<testitem item_name="电话达人" item_grade="7" item_type="3" item_standard="5"/>
+	<testitem item_name="电话之王" item_grade="8" item_type="3" item_standard="10"/>
+	<testitem item_name="爱听故事" item_grade="9" item_type="4" item_standard="5"/>
+	<testitem item_name="手表爱好者" item_grade="10" item_type="5" item_standard="10"/>
+	<testitem item_name="手表狂热者" item_grade="11" item_type="5" item_standard="20"/>
+</resources>

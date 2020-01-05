@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<testitem item_name="青铜1" item_grade="1" item_exp="5"/>
+	<testitem item_name="青铜2" item_grade="2" item_exp="13"/>
+	<testitem item_name="青铜3" item_grade="3" item_exp="24"/>
+	<testitem item_name="青铜4" item_grade="4" item_exp="39"/>
+	<testitem item_name="青铜5" item_grade="5" item_exp="58"/>
+	<testitem item_name="白银1" item_grade="6" item_exp="78"/>
+	<testitem item_name="白银2" item_grade="7" item_exp="103"/>
+	<testitem item_name="白银3" item_grade="8" item_exp="133"/>
+	<testitem item_name="白银4" item_grade="9" item_exp="169"/>
+	<testitem item_name="白银5" item_grade="10" item_exp="210"/>
+	<testitem item_name="黄金1" item_grade="11" item_exp="256"/>
+	<testitem item_name="黄金2" item_grade="12" item_exp="310"/>
+	<testitem item_name="黄金3" item_grade="13" item_exp="370"/>
+	<testitem item_name="黄金4" item_grade="14" item_exp="438"/>
+	<testitem item_name="黄金5" item_grade="15" item_exp="514"/>
+	<testitem item_name="铂金1" item_grade="16" item_exp="611"/>
+	<testitem item_name="铂金2" item_grade="17" item_exp="719"/>
+	<testitem item_name="铂金3" item_grade="18" item_exp="837"/>
+	<testitem item_name="铂金4" item_grade="19" item_exp="965"/>
+	<testitem item_name="铂金5" item_grade="20" item_exp="1105"/>
+	<testitem item_name="钻石1" item_grade="21" item_exp="1282"/>
+	<testitem item_name="钻石2" item_grade="22" item_exp="1474"/>
+	<testitem item_name="钻石3" item_grade="23" item_exp="1680"/>
+	<testitem item_name="钻石4" item_grade="24" item_exp="1902"/>
+	<testitem item_name="钻石5" item_grade="25" item_exp="2140"/>
+	<testitem item_name="大师1" item_grade="26" item_exp="2440"/>
+	<testitem item_name="大师2" item_grade="27" item_exp="2760"/>
+	<testitem item_name="大师3" item_grade="28" item_exp="3100"/>
+	<testitem item_name="大师4" item_grade="29" item_exp="3463"/>
+	<testitem item_name="大师5" item_grade="30" item_exp="3847"/>
+	<testitem item_name="王者1" item_grade="31" item_exp="4331"/>
+	<testitem item_name="王者2" item_grade="32" item_exp="4843"/>
+	<testitem item_name="王者3" item_grade="33" item_exp="5384"/>
+	<testitem item_name="王者4" item_grade="34" item_exp="5955"/>
+	<testitem item_name="王者5" item_grade="35" item_exp="6557"/>
+</resources>

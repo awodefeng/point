@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xxun.pointsystem"
+    coreApp="true"
+    android:sharedUserId="android.uid.system">
+
+    <application
+        android:name=".XunPointApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailActivity">
+        </activity>
+        <activity android:name=".StepExchangeActivity">
+        </activity>
+        <activity android:name=".LuckyBagActivity">
+        </activity>
+        <activity android:name=".OthersExchangeActivity">
+        </activity>
+
+        <provider android:name="com.xxun.pointsystem.provider.ExpProvider"
+            android:authorities="com.xiaoxun.exp.provider" android:exported = "true">
+        </provider>
+    </application>
+
+</manifest>

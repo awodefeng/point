@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <RelativeLayout
+                android:id="@+id/level_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/level_left"
+                    android:text="LV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="35dp"
+                    android:textColor="@color/white"/>
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/divider"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/level_right"
+                    android:text="LV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="35dp"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/progesss"
+                android:layout_below="@+id/level_display"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:maxHeight="50dp"
+                android:minHeight="20dp"
+                android:progress="20"/>
+
+            <TextView
+                android:id="@+id/decribe1"
+                android:text="@string/total_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progesss"
+                android:textSize="25dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/decribe2"
+                android:text="@string/covert_point_from_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/decribe1"
+                android:textSize="25dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/decribe3"
+                android:text="@string/obtain_point_from_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/decribe2"
+                android:textSize="25dp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/rank_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/decribe3"
+                android:src="@drawable/rank_title"/>
+
+            <RelativeLayout
+                android:id="@+id/rank_layout"
+                android:layout_below="@+id/rank_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/my_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/myavatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/man_small_01" />
+
+                    <TextView
+                        android:id="@+id/myname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/myavatar"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/mypoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="left"
+                        android:text="10000"
+                        android:textColor="@color/red"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/divider"
+                    android:layout_below="@+id/my_rank"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/rank_no_statics"
+                    android:text="@string/rank_title"
+                    android:layout_below="@+id/divider_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40dp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"/>
+
+                <com.xxun.pointsystem.utils.ListViewForScrollView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/divider_line"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>
